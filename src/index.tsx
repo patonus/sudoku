@@ -5,12 +5,20 @@ import reportWebVitals from './reportWebVitals'
 import GlobalStyles from './styles/global'
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme'
+import { Card, Content, Title } from './components'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
-			<div>Hello world</div>
+			<Content>
+				<Title>Sudoku</Title>
+				<Card>
+					Duis consectetur duis et anim cupidatat magna. Duis velit aliquip ea
+					fugiat laboris quis veniam veniam nostrud. Laboris velit in aliquip
+					sit esse adipisicing. Mollit eu tempor enim officia.
+				</Card>
+			</Content>
 		</ThemeProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
